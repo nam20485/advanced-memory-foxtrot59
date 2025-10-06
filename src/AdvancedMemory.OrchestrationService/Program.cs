@@ -22,7 +22,7 @@ var summaries = new[]
 app.MapGet("/weatherforecast", () =>
 {
     var forecast =  Enumerable.Range(1, 5).Select(index =>
-        new WeatherForecast
+        new AdvancedMemory.OrchestrationService.WeatherForecast
         (
             DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
             Random.Shared.Next(-20, 55),
@@ -33,9 +33,12 @@ app.MapGet("/weatherforecast", () =>
 })
 .WithName("GetWeatherForecast");
 
-app.Run();
+await app.RunAsync();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+namespace AdvancedMemory.OrchestrationService
 {
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    public record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
+    {
+        public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
+    }
 }

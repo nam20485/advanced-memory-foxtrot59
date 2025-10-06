@@ -15,7 +15,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\AdvancedMemory.ServiceDefaults\AdvancedMemory.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\AdvancedMemory.ServiceDefaults\AdvancedMemory.ServiceDefaults.csproj" IsAspireProjectResource="false" />
     <ProjectReference Include="..\AdvancedMemory.McpServer\AdvancedMemory.McpServer.csproj" />
     <ProjectReference Include="..\AdvancedMemory.GraphRAGService\AdvancedMemory.GraphRAGService.csproj" />
     <ProjectReference Include="..\AdvancedMemory.MemoryService\AdvancedMemory.MemoryService.csproj" />
