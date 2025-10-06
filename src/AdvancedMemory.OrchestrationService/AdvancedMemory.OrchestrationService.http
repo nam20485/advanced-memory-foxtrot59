@@ -1,0 +1,6 @@
+@AdvancedMemory.OrchestrationService_HostAddress = http://localhost:5158
+
+GET {{AdvancedMemory.OrchestrationService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

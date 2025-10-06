@@ -1,0 +1,6 @@
+@AdvancedMemory.MemoryService_HostAddress = http://localhost:5203
+
+GET {{AdvancedMemory.MemoryService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

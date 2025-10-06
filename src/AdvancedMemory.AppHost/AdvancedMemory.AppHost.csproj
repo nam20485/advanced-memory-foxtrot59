@@ -1,0 +1,26 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Sdk Name="Aspire.AppHost.Sdk" Version="9.5.1" />
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <UserSecretsId>9a264f0b-1f36-41cd-b1a6-fe3076e7a344</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Aspire.Hosting.AppHost" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdvancedMemory.ServiceDefaults\AdvancedMemory.ServiceDefaults.csproj" IsAspireProjectResource="false" />
+    <ProjectReference Include="..\AdvancedMemory.McpServer\AdvancedMemory.McpServer.csproj" />
+    <ProjectReference Include="..\AdvancedMemory.GraphRAGService\AdvancedMemory.GraphRAGService.csproj" />
+    <ProjectReference Include="..\AdvancedMemory.MemoryService\AdvancedMemory.MemoryService.csproj" />
+    <ProjectReference Include="..\AdvancedMemory.GroundingService\AdvancedMemory.GroundingService.csproj" />
+    <ProjectReference Include="..\AdvancedMemory.OrchestrationService\AdvancedMemory.OrchestrationService.csproj" />
+  </ItemGroup>
+
+</Project>

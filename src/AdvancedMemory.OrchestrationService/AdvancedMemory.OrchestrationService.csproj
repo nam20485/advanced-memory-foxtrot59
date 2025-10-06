@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\AdvancedMemory.ServiceDefaults\AdvancedMemory.ServiceDefaults.csproj" />
+    <ProjectReference Include="..\AdvancedMemory.Core\AdvancedMemory.Core.csproj" />
+    <ProjectReference Include="..\AdvancedMemory.Infrastructure\AdvancedMemory.Infrastructure.csproj" />
+    <ProjectReference Include="..\AdvancedMemory.Shared\AdvancedMemory.Shared.csproj" />
+  </ItemGroup>
+
+</Project>

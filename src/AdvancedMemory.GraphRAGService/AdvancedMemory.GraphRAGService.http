@@ -1,0 +1,6 @@
+@AdvancedMemory.GraphRAGService_HostAddress = http://localhost:5122
+
+GET {{AdvancedMemory.GraphRAGService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
