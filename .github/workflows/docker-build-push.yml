@@ -24,22 +24,22 @@ jobs:
       matrix:
         service:
           - name: mcp-server
-            dockerfile: docker/mcp-server/Dockerfile
+            dockerfile: src/AdvancedMemory.McpServer/Dockerfile
             context: .
           - name: graphrag-service
-            dockerfile: docker/graphrag-service/Dockerfile
+            dockerfile: src/AdvancedMemory.GraphRAGService/Dockerfile
             context: .
           - name: memory-service
-            dockerfile: docker/memory-service/Dockerfile
+            dockerfile: src/AdvancedMemory.MemoryService/Dockerfile
             context: .
           - name: grounding-service
-            dockerfile: docker/grounding-service/Dockerfile
+            dockerfile: src/AdvancedMemory.GroundingService/Dockerfile
             context: .
           - name: orchestration-service
-            dockerfile: docker/orchestration-service/Dockerfile
+            dockerfile: src/AdvancedMemory.OrchestrationService/Dockerfile
             context: .
           - name: dashboard
-            dockerfile: docker/dashboard/Dockerfile
+            dockerfile: src/AdvancedMemory.Dashboard/Dockerfile
             context: .
     
     steps:

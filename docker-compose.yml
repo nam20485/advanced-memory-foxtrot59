@@ -104,7 +104,7 @@ services:
   mcp-server:
     build:
       context: .
-      dockerfile: docker/mcp-server/Dockerfile
+      dockerfile: src/AdvancedMemory.McpServer/Dockerfile
     container_name: advanced-memory-mcp-server
     ports:
       - "8080:8080"
@@ -142,7 +142,7 @@ services:
   graphrag-service:
     build:
       context: .
-      dockerfile: docker/graphrag-service/Dockerfile
+      dockerfile: src/AdvancedMemory.GraphRAGService/Dockerfile
     container_name: advanced-memory-graphrag-service
     ports:
       - "8081:8081"
@@ -171,7 +171,7 @@ services:
   memory-service:
     build:
       context: .
-      dockerfile: docker/memory-service/Dockerfile
+      dockerfile: src/AdvancedMemory.MemoryService/Dockerfile
     container_name: advanced-memory-memory-service
     ports:
       - "8082:8082"
@@ -200,7 +200,7 @@ services:
   grounding-service:
     build:
       context: .
-      dockerfile: docker/grounding-service/Dockerfile
+      dockerfile: src/AdvancedMemory.GroundingService/Dockerfile
     container_name: advanced-memory-grounding-service
     ports:
       - "8083:8083"
@@ -227,7 +227,7 @@ services:
   orchestration-service:
     build:
       context: .
-      dockerfile: docker/orchestration-service/Dockerfile
+      dockerfile: src/AdvancedMemory.OrchestrationService/Dockerfile
     container_name: advanced-memory-orchestration-service
     ports:
       - "8084:8084"
@@ -259,7 +259,7 @@ services:
   dashboard:
     build:
       context: .
-      dockerfile: docker/dashboard/Dockerfile
+      dockerfile: src/AdvancedMemory.Dashboard/Dockerfile
     container_name: advanced-memory-dashboard
     ports:
       - "8090:80"

@@ -195,13 +195,12 @@ Once running, services are available at:
 │   ├── AdvancedMemory.MemoryService.Tests/
 │   ├── AdvancedMemory.McpServer.Tests/
 │   └── AdvancedMemory.E2E.Tests/
-├── docker/                       # Dockerfiles for each service
 ├── scripts/                      # Build, test, and deployment scripts
 │   ├── build/                    # Build scripts
 │   ├── test/                     # Test scripts
 │   └── deploy/                   # Deployment scripts
 ├── docs/                         # Documentation
-├── terraform/                    # Infrastructure as Code
+│   └── adr/                      # Architecture Decision Records
 ├── docker-compose.yml            # Local development compose file
 └── AdvancedMemory.sln            # Solution file
 ```
@@ -378,11 +377,13 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Documentation
 
+- [AI Repository Summary](.ai-repository-summary.md) - Quick overview for AI agents and developers
 - [Application Plan](docs/application-plan.md) - Complete implementation plan
 - [Architecture](docs/architecture.md) - System architecture and design
 - [Tech Stack](docs/tech-stack.md) - Technology decisions
 - [Project Structure](docs/project-structure.md) - Directory structure
 - [API Documentation](docs/api/) - API reference
+- [ADRs](docs/adr/) - Architecture Decision Records
 
 ## Support
 
