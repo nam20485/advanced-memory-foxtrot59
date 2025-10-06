@@ -1,0 +1,6 @@
+@AdvancedMemory.GroundingService_HostAddress = http://localhost:5181
+
+GET {{AdvancedMemory.GroundingService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

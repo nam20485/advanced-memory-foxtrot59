@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\AdvancedMemory.McpServer\AdvancedMemory.McpServer.csproj" />
+    <ProjectReference Include="..\..\src\AdvancedMemory.GraphRAGService\AdvancedMemory.GraphRAGService.csproj" />
+    <ProjectReference Include="..\..\src\AdvancedMemory.MemoryService\AdvancedMemory.MemoryService.csproj" />
+    <ProjectReference Include="..\..\src\AdvancedMemory.GroundingService\AdvancedMemory.GroundingService.csproj" />
+    <ProjectReference Include="..\..\src\AdvancedMemory.OrchestrationService\AdvancedMemory.OrchestrationService.csproj" />
+  </ItemGroup>
+
+</Project>
